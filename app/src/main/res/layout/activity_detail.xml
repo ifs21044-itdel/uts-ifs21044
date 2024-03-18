@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".DetailActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/cover"
+            android:layout_width="406dp"
+            android:layout_height="235dp"
+            android:layout_marginTop="36dp"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/cover"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/tyrannosauridae" />
+
+        <TextView
+            android:id="@+id/judul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="236dp"
+            android:contentDescription="@string/judul"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Tyrannosauridae"
+            android:textColor="@color/black"
+            android:textSize="30dp"
+            app:layout_constraintEnd_toEndOf="@+id/cover"
+            app:layout_constraintHorizontal_bias="0.423"
+            app:layout_constraintStart_toStartOf="@+id/cover"
+            app:layout_constraintTop_toTopOf="@+id/cover" />
+
+        <TextView
+            android:id="@+id/debut"
+            style="@style/MaterialAlertDialog.Material3.Body.Text.CenterStacked"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_marginStart="15dp"
+            android:contentDescription="@string/debut"
+            android:fontFamily="@font/poppins_regular"
+            android:text="isinya"
+            android:textColor="@color/black"
+            android:textSize="14dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.473"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/judul"
+            tools:ignore="TextSizeCheck" />
+
+        <TextView
+            android:id="@+id/tanggal"
+            style="@style/MaterialAlertDialog.Material3.Body.Text.CenterStacked"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:contentDescription="@string/tanggal"
+            android:fontFamily="@font/poppins_regular"
+            android:text="2019.02.09"
+            android:textColor="@color/black"
+            android:textSize="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/debut"
+            tools:ignore="TextSizeCheck" />
+
+        <ImageView
+            android:id="@+id/dino1"
+            android:layout_width="180dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="28dp"
+            android:contentDescription="@string/dino1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.069"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tanggal"
+            app:srcCompat="@drawable/tyrannosaurusrex" />
+
+        <ImageView
+            android:id="@+id/dino2"
+            android:layout_width="180dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="32dp"
+            android:contentDescription="@string/dino2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.542"
+            app:layout_constraintStart_toEndOf="@+id/dino1"
+            app:layout_constraintTop_toBottomOf="@+id/tanggal"
+            app:srcCompat="@drawable/albertosaurus" />
+
+        <TextView
+            android:id="@+id/dinoket1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/dinoket1"
+            android:fontFamily="@font/poppins_regular"
+            android:text="tyrannosaurusrex"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.153"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dino1" />
+
+        <TextView
+            android:id="@+id/dinoket2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/dinoket2"
+            android:fontFamily="@font/poppins_regular"
+            android:text="albertosaurus"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.703"
+            app:layout_constraintStart_toEndOf="@+id/dinoket1"
+            app:layout_constraintTop_toBottomOf="@+id/dino2" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

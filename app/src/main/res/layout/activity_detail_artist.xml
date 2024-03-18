@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".DetailArtistActivity">
+
+    <ImageView
+        android:id="@+id/pp"
+        android:layout_width="410dp"
+        android:layout_height="309dp"
+        android:layout_margin="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="5dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/pp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/kim"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/capt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/capt"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Kim Hee Ae"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/pp"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@+id/pp"
+        app:layout_constraintTop_toBottomOf="@+id/pp"
+        app:layout_constraintVertical_bias="0.037" />
+
+    <TextView
+        android:id="@+id/keterangan"
+        style="@style/MaterialAlertDialog.Material3.Body.Text.CenterStacked"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/keterangan"
+        android:fontFamily="@font/poppins_regular"
+        android:text="Kim Hee Ae has solidified her position as a national actress to trust and admire through her consistent work since her debut, demonstrating exceptional character versatility and near-perfect acting skills. She has proven her irreplaceable presence by navigating diverse genres and characters in dramas such as 'Secret Affair,' 'Mrs. Cop,' 'The World of the Married,' and movies such as 'Elegant Lies,' 'Cart,' 'Herstory,' and 'Moonlit Winter.' As time passes by, her charm deepens, and her unchanging beauty continues to captivate the hearts of viewers and audiences alike."
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/capt" />
+</androidx.constraintlayout.widget.ConstraintLayout>

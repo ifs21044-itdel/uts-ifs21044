@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">dinopedia</string>
+    <string name="cover">cover</string>
+    <string name="judul">judul</string>
+    <string name="debut">debut</string>
+    <string name="tanggal">tanggal</string>
+    <string name="dino1">dino1</string>
+    <string name="dino2">dino2</string>
+    <string name="dinoket1">dinoket1</string>
+    <string name="dinoket2">dinoket2</string>
+    <string name="pp">pp</string>
+    <string name="capt">capt</string>
+    <string name="keterangan">keterangan</string>
+</resources>
